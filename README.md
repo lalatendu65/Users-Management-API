@@ -42,7 +42,7 @@ Usage: Send a DELETE request to /customerdetailsDelete/:id, replacing :id with t
 
 5.Start the application:The API should now be running locally and accessible at http://localhost:8000.
 
-6.if you want to access in online you use https://customer-management-api-bt28.onrender.com this URL
+6.if you want to access in online you use https://customer-management-api-bt28.onrender.com this URL in postman with provided api endpoint 
 
 #Decisions and Assumptions
 During the development process, the following decisions and assumptions were made:
