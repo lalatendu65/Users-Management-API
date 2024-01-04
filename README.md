@@ -45,4 +45,13 @@ Usage: Send a DELETE request to /customerdetailsDelete/:id, replacing :id with t
 6.if you want to access in online you use https://customer-management-api-bt28.onrender.com this URL in postman with provided api endpoint 
 
 #Decisions and Assumptions
+
 During the development process, the following decisions and assumptions were made:
+
+The API is built using Node.js and Express.js for simplicity.
+
+MongoDB is used as the database system.
+
+The API assumes a specific data structure for Customer details including name, email, phoneNumber and address.
+
+The API returns JSON responses for ease of integration with other applications.
