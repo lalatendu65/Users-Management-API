@@ -1,4 +1,5 @@
-#Customer Management API
+Customer Management API
+
 This is a Customer Management API that allows you to perform CRUD (Create, Read, Update, Delete) operations on Customer details.
 
 API Endpoints
