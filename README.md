@@ -24,11 +24,17 @@ Description: Delete a Customer details from the database by its ID.
 Usage: Send a DELETE request to /customerdetailsDelete/:id, replacing :id with the ID of the customer you want to delete.
 
 #How to Set Up and Run the Application Locally
+
 1.Clone the repository to your local machine:
+
 2.Change into the project directory:
+
 3.Install the required dependencies: using npm i 
+
 4.Configure your database connection details in your application
+
 5.Start the application:The API should now be running locally and accessible at http://localhost:8000.
+
 6.if you want to access in online you use https://customer-management-api-bt28.onrender.com this URL
 
 #Decisions and Assumptions
