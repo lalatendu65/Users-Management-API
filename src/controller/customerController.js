@@ -32,19 +32,23 @@ const customerdetails=async(req,res)=>{
     const id=req.params.id;
     try{
         const customerDetails = await CustomerData.findById(id);
-       
-    if (!customerDetails) {
-      return res.status(404).json({message: "No Customer details available for this specific ID"});
-    }
 
-    res.status(200).json(customerDetails);
+      if (!customerDetails) {
+        return res.status(404).json({message: "No Customer details available for this specific ID"});
+      }
+
+      res.status(200).json(customerDetails);
 
     }
 
     catch(error){
+      if (error.name === "CastError") {
+        // This error occurs when the provided ID is not valid
+        return res.status(400).json({ message: "Invalid ID format" });
+      }
 
         res.status(404).json({message:'Error while getting Customer Details'});
-
+        
     }
 }
 
