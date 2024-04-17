@@ -1,31 +1,24 @@
 const mongoose = require("mongoose");
 
-const CustomerSchema = new mongoose.Schema(
+const userSchema = new mongoose.Schema(
   {
-    name:{
-        type: String,
-        required: true
+    name: {
+      type: String,
+      required: true,
     },
-    email:{
-        type:String,
-        unique:true,
-        required:true
-
+    email: {
+      type: String,
+      unique: true,
+      required: true,
     },
-    phoneNumber:{
-        type:Number,
-        required:true
-        
+    age: {
+      type: Number,
+      required: true,
     },
-    address: {
-        type:String,
-    }
-
-
   },
   { versionKey: false }
 );
 
-const CustomerData = mongoose.model("CustomerManagement", CustomerSchema);
+const CustomerData = mongoose.model("users", userSchema);
 
 module.exports = CustomerData;

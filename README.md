@@ -1,34 +1,35 @@
-Customer Management API
+Users Management API
 
-This is a Customer Management API that allows you to perform CRUD (Create, Read, Update, Delete) operations on Customer details.
+This is a Users Management API that allows you to perform CRUD (Create, Read, Update, Delete) operations on Users details.
 
 API Endpoints
-1. Add customer details 
-Endpoint: POST /addCustomer
 
-Description: Add a new Customer details to the database.
-Usage: Send a POST request to /addCustomer with a JSON body containing customer data, including name, email, phoneNumber and address
+1. Add users details
+   Endpoint: POST /api/users
 
-2. Get Customer details  by specific Customer ID
+Description: Add a new users details to the database.
+Usage: Send a POST request to /api/users with a JSON body containing users data, including name, email, phoneNumber and address
 
-Endpoint: GET /customerdetails/:id
+2. Get users details by specific users ID
 
-Description: Retrieve a specific Customer details by its ID.
-Usage: Send a GET request to /customerdetails/:id, replacing :id with the ID of the Customer you want to retrieve.
+Endpoint: GET /api/users:id
 
-3. Update Customer details specific Customer ID
-   
-Endpoint: PUT /customerdetailsUpdate/:id
+Description: Retrieve a specific users details by its ID.
+Usage: Send a GET request to /api/users:id, replacing :id with the ID of the users you want to retrieve.
 
-Description: Update the information of a Customer details  by its ID.
-Usage: Send a PUT request to /customerdetailsUpdate/:id, replacing :id with the ID of the Customer you want to update. Include a JSON body with the updated Customer data.
+3. Update users details specific users ID
 
-4. Delete Customer details by ID
-   
-Endpoint: DELETE /customerdetailsDelete/:id
+Endpoint: PUT /api/users:id
 
-Description: Delete a Customer details from the database by its ID.
-Usage: Send a DELETE request to /customerdetailsDelete/:id, replacing :id with the ID of the customer you want to delete.
+Description: Update the information of a users details by its ID.
+Usage: Send a PUT request to /api/users:id, replacing :id with the ID of the users you want to update. Include a JSON body with the updated users data.
+
+4. Delete users details by ID
+
+Endpoint: DELETE /api/users:id
+
+Description: Delete a users details from the database by its ID.
+Usage: Send a DELETE request to /api/users:id, replacing :id with the ID of the users you want to delete.
 
 #How to Set Up and Run the Application Locally
 
@@ -36,13 +37,13 @@ Usage: Send a DELETE request to /customerdetailsDelete/:id, replacing :id with t
 
 2.Change into the project directory:
 
-3.Install the required dependencies: using npm i 
+3.Install the required dependencies: using npm i
 
 4.Configure your database connection details in your application
 
 5.Start the application:The API should now be running locally and accessible at http://localhost:8000.
 
-6.if you want to access in online you use https://customer-management-api-bt28.onrender.com this URL in postman with provided api endpoint 
+6.if you want to access in online you use https://customer-management-api-bt28.onrender.com this URL in postman with provided api endpoint
 
 #Decisions and Assumptions
 
@@ -52,6 +53,6 @@ The API is built using Node.js and Express.js for simplicity.
 
 MongoDB is used as the database system.
 
-The API assumes a specific data structure for Customer details including name, email, phoneNumber and address.
+The API assumes a specific data structure for users details including name, email, phoneNumber and address.
 
 The API returns JSON responses for ease of integration with other applications.
