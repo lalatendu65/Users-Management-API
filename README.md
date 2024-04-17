@@ -31,6 +31,8 @@ Endpoint: DELETE /api/users:id
 Description: Delete a users details from the database by its ID.
 Usage: Send a DELETE request to /api/users:id, replacing :id with the ID of the users you want to delete.
 
+Send a GET request to /api/users to retrieve information about all users registered in the system.
+
 #How to Set Up and Run the Application Locally
 
 1.Clone the repository to your local machine:
