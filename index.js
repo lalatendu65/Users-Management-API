@@ -17,6 +17,7 @@ app.get("/", (req, res) => {
       <h1 style = "width: 200px; height: 200px; background-color: #89CFF0; text-align: center; padding: 20px;">
         Welcome to User management Api !
       </h1>
+      <p> In This you can find information about the Users </p>
     </body>`
   );
 });
