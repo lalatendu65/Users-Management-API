@@ -61,7 +61,7 @@ const userDetails = async (req, res) => {
       return res.status(400).json({ message: "Invalid ID format" });
     }
 
-    res.status(404).json({ message: "Error while getting User Details" });
+    res.status(404).json({ message: "Error while Updating User Details" });
   }
 };
 
